@@ -11,6 +11,9 @@ import ToggleBar from "../toggle-bar/ToggleBar.tsx";
 import { AnimatePresence } from "framer-motion";
 */
 import LockScreen from "../lock-screen/LockScreen.tsx";
+import { Route, Routes, useLocation } from "react-router-dom";
+import Home from "../home/Home.tsx";
+import Quiz from "../quiz/Quiz.tsx";
 
 function App() {
   /*
@@ -35,10 +38,15 @@ function App() {
 
   const location = useLocation();
 */
+  const location = useLocation();
 
   return (
     <>
       <LockScreen />
+      <Routes location={location} key={location.pathname}>
+        <Route index element={<Home />} />
+        <Route path="/quiz" element={<Quiz />} />
+      </Routes>
     </>
   );
 }
