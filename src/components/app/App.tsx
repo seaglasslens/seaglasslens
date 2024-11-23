@@ -13,7 +13,6 @@ import { AnimatePresence } from "framer-motion";
 import AppProvider from "./AppContext.tsx";
 import LockScreen from "../lock-screen/LockScreen.tsx";
 import { Route, Routes, useLocation } from "react-router-dom";
-import Home from "../home/Home.tsx";
 import Quiz from "../quiz/Quiz.tsx";
 
 function App() {
@@ -46,7 +45,6 @@ function App() {
       <LockScreen />
       <AppProvider>
         <Routes location={location} key={location.pathname}>
-          <Route index element={<Home />} />
           <Route path="/quiz" element={<Quiz />} />
         </Routes>
       </AppProvider>
