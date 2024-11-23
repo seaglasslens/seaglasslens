@@ -14,12 +14,12 @@ import "./components/page-transition/PageTransition.scss";
 import "./components/artists/Artists.scss";
 import "./components/modal/Modal.scss";
 import "./components/toggle-bar/ToggleBar.scss";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
