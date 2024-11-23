@@ -1,0 +1,74 @@
+.artists-container {
+  width: 45rem;
+  aspect-ratio: 2048/2574;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.filter-bar {
+  position: absolute;
+  bottom: 6%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem;
+}
+.filter {
+  width: 30%;
+  aspect-ratio: 1285/747;
+}
+.previous-filter,
+.next-filter {
+  color: white;
+}
+
+.artists-list {
+  width: 70%;
+  position: absolute;
+  top: 12%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.5rem;
+  padding: 0;
+  list-style: none;
+}
+.artists-list-item {
+  aspect-ratio: 1006/301;
+  padding: 0.75rem 2rem 0rem 2rem;
+  background-image: url(../../assets/sardine-1.png);
+  color: rgb(0, 73, 200);
+}
+.artists-list-item:nth-child(3n-2) {
+  transform: rotate(3deg);
+}
+.artists-list-item:nth-child(3n-1) {
+  transform: rotate(-1deg);
+}
+.artists-list-item:nth-child(3n) {
+  transform: rotate(5deg);
+}
+/*
+@media (hover: hover) and (pointer: fine) {
+  .artists-list-item:hover,
+  .artists-list-item:focus-visible {
+    transform: scale(1.1);
+  }
+}*/
+
+.username,
+.username:active,
+.username:focus {
+  text-decoration: none;
+  color: inherit;
+}
+.username:hover {
+  color: azure;
+}

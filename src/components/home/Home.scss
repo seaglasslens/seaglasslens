@@ -1,0 +1,162 @@
+@use "../../styling/mixins" as *;
+
+.home-background {
+  width: 100vw;
+  width: 100svw;
+  height: 100vh;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../assets/home-background.png);
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  z-index: 777;
+  margin: 1rem;
+  top: 0;
+  left: 0;
+}
+header img {
+  width: 17rem;
+  aspect-ratio: 901/452;
+  display: block;
+  pointer-events: none;
+}
+
+.room {
+  width: 50rem;
+
+  /*
+  @include responsive-layout("xs") {
+    width: 5rem;
+  }
+  @include responsive-layout("sm") {
+    width: 10rem;
+  }
+  @include responsive-layout("md") {
+    width: 15rem;
+  }
+  @include responsive-layout("lg") {
+    width: 20rem;
+  }
+  @include responsive-layout("xl") {
+    width: 25rem;
+  }
+  @include responsive-layout("xxl") {
+    width: 55rem;
+  }*/
+
+  aspect-ratio: 1/1;
+  position: relative;
+  background-image: url(../../assets/room.png);
+}
+
+.zzz {
+  width: 18.5%;
+  aspect-ratio: 335/308;
+  position: absolute;
+  top: 46.5%;
+  left: 20.5%;
+  background-image: url(../../assets/zzz.png);
+}
+
+.contact {
+  width: 21.25%;
+  aspect-ratio: 393/282;
+  position: absolute;
+  top: 16.25%;
+  left: 50.6%;
+  background-image: url(../../assets/contact.png);
+  cursor: url(../../assets/pointer.png), auto;
+}
+.contact:hover,
+.contact:focus-visible {
+  background-image: url(../../assets/contact-hover.png);
+}
+.contact:hover:active {
+  background-image: url(../../assets/contact-active.png);
+}
+
+.staff {
+  width: 21.75%;
+  aspect-ratio: 408/387;
+  position: absolute;
+  top: 27.75%;
+  left: 7%;
+  background-image: url(../../assets/staff.png);
+  cursor: url(../../assets/pointer.png), auto;
+}
+.staff:hover,
+.staff:focus-visible {
+  background-image: url(../../assets/staff-hover.png);
+}
+.staff:hover:active {
+  background-image: url(../../assets/staff-active.png);
+}
+
+.egg {
+  width: 12%;
+  aspect-ratio: 223/177;
+  position: absolute;
+  top: 30.75%;
+  left: 69%;
+  background-image: url(../../assets/egg.png);
+  cursor: url(../../assets/pointer.png), auto;
+}
+.egg:hover,
+.egg:hover:active,
+.egg:focus-visible {
+  background-image: url(../../assets/egg-hover.png);
+}
+
+.shop {
+  width: 32%;
+  aspect-ratio: 589/260;
+  position: absolute;
+  top: 43.75%;
+  left: 32.5%;
+  background-image: url(../../assets/book.png);
+}
+.shop:hover,
+.shop:focus-visible {
+  background-image: url(../../assets/book-hover.png);
+}
+.shop:hover:active {
+  background-image: url(../../assets/book-active.png);
+}
+
+.quiz {
+  width: 26.5%;
+  aspect-ratio: 511/549;
+  position: absolute;
+  top: 40%;
+  left: 65.5%;
+  background-image: url(../../assets/quiz.png);
+}
+.quiz:hover,
+.quiz:focus-visible {
+  background-image: url(../../assets/quiz-hover.png);
+}
+.quiz:hover:active {
+  background-image: url(../../assets/quiz-active.png);
+}
+
+.artists {
+  width: 21%;
+  aspect-ratio: 402/304;
+  position: absolute;
+  top: 66.25%;
+  left: 37.5%;
+  background-image: url(../../assets/artists.png);
+  cursor: url(../../assets/pointer.png), auto;
+}
+.artists:hover,
+.artists:focus-visible {
+  background-image: url(../../assets/artists-hover.png);
+}
+.artists:hover:active {
+  background-image: url(../../assets/artists-active.png);
+}

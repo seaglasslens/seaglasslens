@@ -1,0 +1,21 @@
+.magnifier {
+  height: 118vw;
+  height: 118svw;
+  aspect-ratio: 2766/3408;
+}
+@media (orientation: landscape) {
+  .magnifier {
+    height: 90vh;
+    height: 90svh;
+  }
+}
+
+.glasses {
+  width: 600px;
+  aspect-ratio: 1137 / 489;
+  position: absolute;
+  top: -3%;
+  left: -3%;
+  background-image: url(../../assets/glasses.png);
+  z-index: 1;
+}

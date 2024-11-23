@@ -1,0 +1,12 @@
+.spinner {
+  height: 55vw;
+  height: 55svw;
+  aspect-ratio: 1024/905;
+  background-image: url(../../assets/spinner.png);
+}
+@media (orientation: landscape) {
+  .spinner {
+    height: 50vh;
+    height: 50svh;
+  }
+}

@@ -1,0 +1,36 @@
+.thank-you {
+  height: 100vw;
+  height: 100svw;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+@media (orientation: landscape) {
+  .thank-you {
+    height: 90vh;
+    height: 90svh;
+  }
+}
+.thank-you img {
+  width: 74%;
+  aspect-ratio: 2041/2519;
+  position: absolute;
+  top: -3%;
+  left: 2%;
+  display: block;
+  pointer-events: none;
+}
+
+.nhi-shop {
+  width: 13%;
+  aspect-ratio: 1/1.4;
+  position: absolute;
+  top: 25%;
+  left: 24%;
+}
+.maggie-shop {
+  width: 12%;
+  aspect-ratio: 1/1.25;
+  position: absolute;
+  top: 26%;
+  left: 39%;
+}

@@ -1,0 +1,39 @@
+.backdrop {
+  width: 100vw;
+  width: 100svw;
+  height: 100vh;
+  height: 100svh;
+  position: fixed;
+  z-index: 888;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0 0 0 / 0.85);
+  overflow-y: scroll;
+}
+
+.close {
+  width: 60px;
+  aspect-ratio: 391/383;
+  position: fixed;
+  margin: 1rem;
+  top: 0;
+  right: 0;
+  background-image: url(../../assets/close.png);
+  cursor: url(../../assets/pointer.png), auto;
+}
+@media (hover: hover) and (pointer: fine) {
+  .close:hover,
+  .close:focus-visible {
+    transform: scale(1.1);
+  }
+  .close:hover:active {
+    transform: scale(1);
+  }
+}
+@media (hover: none) and (pointer: coarse) {
+  .close:active {
+    transform: scale(0.9);
+  }
+}

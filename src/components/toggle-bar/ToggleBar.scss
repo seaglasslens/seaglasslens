@@ -1,0 +1,39 @@
+.toggle-bar {
+  position: fixed;
+  z-index: 777;
+  margin: 1rem;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sound-toggle {
+  width: 5.25rem;
+  aspect-ratio: 395/413;
+  background-image: url(../../assets/sound-off.png);
+}
+.sound-on {
+  background-image: url(../../assets/sound-on.png);
+}
+.music-toggle {
+  width: 5.25rem;
+  aspect-ratio: 395/413;
+  background-image: url(../../assets/music-off.png);
+}
+.music-on {
+  background-image: url(../../assets/music-on.png);
+}
+@media (hover: hover) and (pointer: fine) {
+  .sound-toggle:hover,
+  .sound-toggle:focus-visible,
+  .music-toggle:hover,
+  .music-toggle:focus-visible {
+    transform: scale(1.1);
+  }
+  .sound-toggle:hover:active,
+  .music-toggle:hover:active {
+    transform: scale(1);
+  }
+}

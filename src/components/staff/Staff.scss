@@ -1,0 +1,17 @@
+.staff-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.staff-page-pdf {
+  color: white;
+  width: fit-content;
+  margin-left: 0.2rem;
+}
+.staff-page-pdf img {
+  height: 0.8em;
+  aspect-ratio: 147/191;
+  margin-left: 0.35rem;
+  pointer-events: none;
+}

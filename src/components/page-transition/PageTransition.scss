@@ -1,0 +1,26 @@
+.disable-page,
+.loading-overlay {
+  width: 100vw;
+  width: 100svw;
+  height: 100vh;
+  height: 100svh;
+  position: fixed;
+  z-index: 999;
+}
+/*
+.disable-page {
+  background: transparent;
+}
+.loading-overlay {
+  background: black;
+}*/
+.loading-fish {
+  width: 10%;
+  aspect-ratio: 1218/1149;
+  position: fixed;
+  z-index: 999;
+  margin: 2rem;
+  right: 0;
+  bottom: 0;
+  background-image: url(../../assets/loading-fish.png);
+}

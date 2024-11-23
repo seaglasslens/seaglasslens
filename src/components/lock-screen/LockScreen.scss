@@ -1,0 +1,12 @@
+.lock-screen {
+  height: 55vw;
+  height: 55svw;
+  aspect-ratio: 1/1;
+  background-image: url(../../assets/coming-soon.png);
+}
+@media (orientation: landscape) {
+  .lock-screen {
+    height: 50vh;
+    height: 50svh;
+  }
+}

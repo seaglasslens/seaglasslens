@@ -1,0 +1,206 @@
+.radar {
+  height: 60vw;
+  height: 60svw;
+  aspect-ratio: 1496/932;
+  position: relative;
+  background-image: url(../../assets/radar.png);
+}
+@media (orientation: landscape) {
+  .radar {
+    height: 90vh;
+    height: 90svh;
+  }
+}
+
+.dot {
+  width: 1.5%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  background-image: url(../../assets/dot.png);
+}
+@media (hover: hover) and (pointer: fine) {
+  .dot:hover {
+    transform: scale(1.1);
+  }
+}
+.dot-jelly {
+  top: 40%;
+  left: 10%;
+}
+.dot-jelly:hover + .critter-jelly {
+  display: block;
+}
+.dot-nautilus {
+  top: 18%;
+  left: 38%;
+}
+.dot-nautilus:hover + .critter-nautilus {
+  display: block;
+}
+.dot-coral {
+  right: 16%;
+  bottom: 30%;
+}
+.dot-coral:hover + .critter-coral {
+  display: block;
+}
+.dot-crab {
+  top: 32%;
+  left: 15%;
+}
+.dot-crab:hover + .critter-crab {
+  display: block;
+}
+.dot-shark {
+  top: 43%;
+  left: 23%;
+}
+.dot-shark:hover + .critter-shark {
+  display: block;
+}
+.dot-angel {
+  top: 84%;
+  left: 40%;
+}
+.dot-angel:hover + .critter-angel {
+  display: block;
+}
+.dot-fish {
+  right: 19%;
+  bottom: 27%;
+}
+.dot-fish:hover + .critter-fish {
+  display: block;
+}
+.dot-seal {
+  right: 45%;
+  bottom: 26%;
+}
+.dot-seal:hover + .critter-seal {
+  display: block;
+}
+.dot-star {
+  bottom: 45%;
+  left: 37%;
+}
+.dot-star:hover + .critter-star {
+  display: block;
+}
+.dot-hermit {
+  top: 12%;
+  right: 17%;
+}
+.dot-hermit:hover + .critter-hermit {
+  display: block;
+}
+.dot-ray {
+  top: 38%;
+  right: 32%;
+}
+.dot-ray:hover + .critter-ray {
+  display: block;
+}
+.dot-turtle {
+  top: 47%;
+  right: 40%;
+}
+.dot-turtle:hover + .critter-turtle {
+  display: block;
+}
+
+.critter {
+  width: 6%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  display: none;
+}
+.critter-jelly {
+  top: 30%;
+  left: 7%;
+  background-image: url(../../assets/8-bit-jelly.png);
+}
+.critter-nautilus {
+  top: 8.5%;
+  left: 37%;
+  background-image: url(../../assets/8-bit-nautilus.png);
+}
+.critter-coral {
+  right: 13%;
+  bottom: 33%;
+  background-image: url(../../assets/8-bit-coral.png);
+}
+.critter-crab {
+  top: 22.5%;
+  left: 14%;
+  background-image: url(../../assets/8-bit-crab.png);
+}
+.critter-shark {
+  top: 33%;
+  left: 20.5%;
+  background-image: url(../../assets/8-bit-shark.png);
+}
+.critter-angel {
+  top: 74%;
+  left: 40%;
+  background-image: url(../../assets/8-bit-angel.png);
+}
+.critter-fish {
+  right: 18%;
+  bottom: 29.5%;
+  background-image: url(../../assets/8-bit-fish.png);
+}
+.critter-seal {
+  right: 46%;
+  bottom: 28.5%;
+  background-image: url(../../assets/8-bit-seal.png);
+}
+.critter-star {
+  bottom: 48%;
+  left: 35%;
+  background-image: url(../../assets/8-bit-star.png);
+}
+.critter-hermit {
+  top: 6%;
+  right: 19%;
+  background-image: url(../../assets/8-bit-hermit.png);
+}
+.critter-ray {
+  top: 28%;
+  right: 29%;
+  background-image: url(../../assets/8-bit-ray.png);
+}
+.critter-turtle {
+  top: 36.5%;
+  right: 39%;
+  background-image: url(../../assets/8-bit-turtle.png);
+}
+
+.platform {
+  width: 13%;
+  aspect-ratio: 570/320;
+  position: absolute;
+}
+@media (hover: hover) and (pointer: fine) {
+  .platform:hover,
+  .platform:focus-visible {
+    transform: scale(1.15);
+  }
+  .platform:hover:active {
+    transform: scale(1);
+  }
+}
+.instagram {
+  top: 19%;
+  right: 33%;
+  background-image: url(../../assets/instagram.png);
+}
+.twitter {
+  top: 32%;
+  right: 10%;
+  background-image: url(../../assets/twitter.png);
+}
+.email {
+  bottom: 16%;
+  left: 14%;
+  background-image: url(../../assets/email.png);
+}

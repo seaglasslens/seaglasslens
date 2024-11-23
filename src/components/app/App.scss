@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap);
+@font-face {
+  font-family: Turtle;
+  src: url(../../assets/turtle.otf);
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+*:focus-visible {
+  box-shadow: 0 0 3px 7px rgb(255, 73, 27),
+    inset 0 0 4px 5px rgb(255, 73, 27);
+  outline: solid 3px rgb(255, 73, 27);
+  border-radius: 15px;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0;
+  background-image: url(../../assets/spinner-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: url(../../assets/cursor.png), auto;
+  overflow: hidden;
+}
+body::after {
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  content: url(../../assets/spinner-background.png)
+    url(../../assets/spinner.png) url(../../assets/logo.png)
+    url(../../assets/home.png) url(../../assets/room.png)
+    url(../../assets/zzz.png) url(../../assets/egg.png)
+    url(../../assets/egg-hover.png) url(../../assets/book.png)
+    url(../../assets/book-hover.png) url(../../assets/book-active.png)
+    url(../../assets/quiz.png) url(../../assets/quiz-hover.png)
+    url(../../assets/quiz-active.png) url(../../assets/artists.png)
+    url(../../assets/artists-hover.png) url(../../assets/artists-active.png)
+    url(../../assets/staff.png) url(../../assets/staff-hover.png)
+    url(../../assets/staff-active.png) url(../../assets/contact.png)
+    url(../../assets/contact-hover.png) url(../../assets/contact-active.png)
+    url(../../assets/close.png) url(../../assets/nhi-and-maggie.png)
+    url(../../assets/title-screen.png) url(../../assets/frame.png)
+    url(../../assets/frame-accent-one.png)
+    url(../../assets/frame-accent-two.png) url(../../assets/frame-clip.png)
+    url(../../assets/input.png) url(../../assets/input-filled.png)
+    url(../../assets/option.png) url(../../assets/option-selected.png)
+    url(../../assets/option-long.png) url(../../assets/option-long-selected.png)
+    url(../../assets/jar.png) url(../../assets/jar-selected.png)
+    url(../../assets/key.png) url(../../assets/key-selected.png)
+    url(../../assets/watch.png) url(../../assets/watch-selected.png)
+    url(../../assets/shell.png) url(../../assets/shell-selected.png)
+    url(../../assets/coin.png) url(../../assets/coin-selected.png)
+    url(../../assets/ring.png) url(../../assets/ring-selected.png)
+    url(../../assets/cloud.png) url(../../assets/bubble.png)
+    url(../../assets/bubble-accent-one.png)
+    url(../../assets/bubble-accent-two.png) url(../../assets/next.png)
+    url(../../assets/next-hover.png) url(../../assets/next-disabled.png)
+    url(../../assets/loading-screen.png) url(../../assets/try-again.png)
+    url(../../assets/try-again-hover.png) url(../../assets/staff-page.png)
+    url(../../assets/pdf-icon.png) url(../../assets/radar.png)
+    url(../../assets/dot.png) url(../../assets/8-bit-jelly.png)
+    url(../../assets/8-bit-nautilus.png) url(../../assets/8-bit-coral.png)
+    url(../../assets/8-bit-crab.png) url(../../assets/8-bit-shark.png)
+    url(../../assets/8-bit-angel.png) url(../../assets/8-bit-fish.png)
+    url(../../assets/8-bit-seal.png) url(../../assets/8-bit-star.png)
+    url(../../assets/8-bit-hermit.png) url(../../assets/8-bit-ray.png)
+    url(../../assets/8-bit-turtle.png) url(../../assets/email.png)
+    url(../../assets/instagram.png) url(../../assets/twitter.png)
+    url(../../assets/sound-on.png) url(../../assets/sound-off.png)
+    url(../../assets/music-on.png) url(../../assets/music-off.png);
+}
+
+#root {
+  width: 100vw;
+  width: 100svw;
+  height: 100vh;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div,
+li {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+a,
+button {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: url(../../assets/pointer.png), auto;
+}
