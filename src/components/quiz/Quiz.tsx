@@ -108,7 +108,6 @@ const variants = {
   },
 };
 */
-import LockScreen from "../lock-screen/LockScreen.tsx";
 
 const Quiz = () => {
   /*
@@ -345,11 +344,7 @@ const Quiz = () => {
   };
 */
 
-  return (
-    <>
-      <LockScreen />
-    </>
-  );
+  return <></>;
 };
 
 export default Quiz;
