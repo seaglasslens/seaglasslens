@@ -10,6 +10,7 @@ import Quiz from "../quiz/Quiz.tsx";
 import ToggleBar from "../toggle-bar/ToggleBar.tsx";
 import { AnimatePresence } from "framer-motion";
 */
+import AppProvider from "./AppContext.tsx";
 import LockScreen from "../lock-screen/LockScreen.tsx";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "../home/Home.tsx";
@@ -43,10 +44,12 @@ function App() {
   return (
     <>
       <LockScreen />
-      <Routes location={location} key={location.pathname}>
-        <Route index element={<Home />} />
-        <Route path="/quiz" element={<Quiz />} />
-      </Routes>
+      <AppProvider>
+        <Routes location={location} key={location.pathname}>
+          <Route index element={<Home />} />
+          <Route path="/quiz" element={<Quiz />} />
+        </Routes>
+      </AppProvider>
     </>
   );
 }
